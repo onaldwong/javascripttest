@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ourFunction(a, b) {
+            console.log(a - b);
+        }
+        ourFunction(10 ,5)
+
+        function minusSeven(num) {
+            return num - 7;
+        }
+
+        console.log(minusSeven(10));
+        
+     function timesFive(num) {
+        return num * 5;
+     }   
+
+     console.log(timesFive(5))
+
+    let sum = 0;
+    function addThree() {
+        sum = sum + 3;
+    }
+
+    console.log(sum)
+
+    function addFive() {
+        sum += 5;
+    }
+
+    
+
+    function change(num) {
+        return (num +5) / 3;
+    }
+
+    changed = change(10);
+    console.log(changed)
+
+    
+    function processArg(num) {
+        return (num +3) / 5;
+    }
+
+    processed = processArg(7);
+    console.log(processed)
+
+    function nextInline(arr, item) {
+        arr.push(item)
+
+        return arr.shift();
+    }
+
+    var testArr = [1,2,3,4,5];
+
+    console.log('Before: ' + JSON.stringify(testArr));
+    console.log(nextInline(testArr, 6));
+    console.log('After: ' + JSON.stringify(testArr));
+
+    function welcomeToBooleans() {
+        return false;
+        if(welcomeToBooleans() === false) {
+        console.log("false");
+        }
+    }
+
+    console.log(welcomeToBooleans())
+    
+
+    console.log("Next")
+
+    function ourTrueOrFalse(isItTrue) {
+        if (isItTrue) {
+            return "Yes, it's true";
+        }
+        return "No, it's false";
+    }
+
+    
+    console.log(ourTrueOrFalse(true));
+
+    function testEqual(val) {
+        if (val == 12) {
+            return "Equal";
+        }
+        return "Not Equal";
+    }
+
+    console.log(testEqual(12))
+
+    function testGreatOrEqual(value) {
+        if (value >= 20) {
+            return "20 or Over";
+        }
+
+        if (value >= 10) {
+            return "10 or Over";
+        }
+
+        return "Less than 10";
+    }
+
+    
+    result = testGreatOrEqual(7);
+
+    function testLogicalAnd(value) {
+        if (value <= 50 && value >= 25) {
+            return "yes"
+        }
+        return "No"
+    }
+
+    console.log(testLogicalAnd(15));
+
+
+    let names = ["Hole-in-one", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home"]
+    function golfScore(par, strokes) {
+        if (strokes == 1) {
+            return names[0]
+        } else if (strokes <= par -2) {
+            return names[1]
+        } else if (strokes == par -1) {
+            return names[2]
+        } else if (strokes == par) {
+            return names[3]
+        } else if (strokes == par + 1) {
+            return names[4]
+        } else if (strokes == par + 2) {
+            return names[5]
+        } else if (strokes >= par + 3) {
+            return names[6]
+        } }
+
+    console.log(golfScore(5,1));
+
+    </script>
+</body>
+</html>

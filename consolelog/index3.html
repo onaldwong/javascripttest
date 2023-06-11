@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+hour = 20;
+    if (hour < 18) {
+        greeting = "Good day";
+        alert(greeting)
+    }
+    else {
+        alert("Good Evening")
+    }
+     
+        time = 18;
+    if (time < 10)
+        {
+            alert("Good Morning!")
+        }
+        else if (time < 20)
+        {
+            alert("Good Day");
+        }
+        else {
+            alert("Good Evening!")
+        }
+
+      let hour2 = 9;
+      if (hour < 10 || hour > 18) {
+        alert("The office is close")
+      }
+
+    let hour3 = 12;
+    let isWeekend = false;
+    if (hour3 < 10 || hour3 > 18 || isWeekend) {
+        alert( "The Office is closed." );
+    }
+    else {
+        alert(" Get to Work Bitch");
+    }
+        
+    let firstName = "";
+    let lastName = "";
+    let nickname = "";
+
+    alert( firstName || lastName || nickname || "Anonymous");
+
+    let hour4 = 13;
+    let minute4 = 30;
+
+    if(hour4 == 12 && minute4 ==30){
+        alert(`The Time now is ${hour4}:${minute4}`)
+    }
+    else{
+        alert(`The time now is ${hour4}:${minute4}`)
+    }
+
+    age = 100;
+    if(age <= 14 || age <= 90){
+        alert("You are between the age of 14 and 90")
+    }
+    else{
+        alert("You are either very young or old as fuck")
+    }
+
+    age2 = 2;
+    if (!(age2 => 14 && age <= 90)){
+        alert("You are between the age of 14 and 90")
+    }
+    else{
+        alert("You are either very young or old as fuck")
+    }
+
+
+    let admin = "admin"
+    let password = "TheMaster"
+    let user =""
+    
+    if(user == admin){
+        if(password == "TheMaster"){
+            alert("Welcome!")
+        }
+        else if(password != "TheMaster"){
+            alert("Wrong password, you donkey")
+        }
+        else if(password == null){
+            alert("Cancelled")
+        }
+    else if(user != admin){
+        alert("I don't know you, dude")
+    }
+    else if(user == null){
+        alert("Cancelled")
+    }
+    }
+
+    
+
+
+</script>
+</html>

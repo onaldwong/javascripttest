@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+let age = prompt('age', 18);
+
+let message = (age < 3) ? 'Hi, Baby' :
+    (age < 18) ? "Hello" :
+    (age < 100) ? "Greetings" :
+    'You are an alien!';
+
+alert( message );
+
+let message2;
+let login = prompt("Are you an employee or the director?")
+if (login == 'employee') {
+    message2 = 'Hello'
+}   else if (login == 'director') {
+    message2 = "Greetings";
+} else if (login =='') {
+    message2 = "No Login"
+} else {
+    message2 = '';
+} 
+
+
+let login2 = prompt("Are you an employee or the director?")
+
+let message3 = (login2 == 'employee') ? 'Hello employee' :
+    (login2 == 'director') ? 'Hello Director' :
+    (login2 == '') ? 'No Logic' : 
+    'You are not an employee' ;
+    
+alert(message3);
+
+</script>
+</html>

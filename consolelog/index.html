@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+
+
+  <script>
+    // Your JavaScript goes here!
+    let text1 = "Hello World!";
+    let text2 = text1.toUpperCase();
+    console.log(text2)
+
+    let text3 = "Hello World!"
+    let text4 = text3.toLowerCase();
+    console.log(text3)
+    
+    let text5 = "Hello";
+    let text6 = "World";
+    let text7 = text6.concat(" ", text5)
+    console.log(text7)
+
+    text8 = "Hello" + " " + "World!";
+    text9 = "Hello".concat(" ", "World!");
+    console.log(text9)
+
+    let text10 = "         Hello World!      ";
+    console.log(text10)
+    let text11 = text10.trim();
+    console.log(text11);
+
+    let text12 = "5"
+    text13 = text12.padStart(4,"0");
+    console.log(text13)
+
+    let numb = 5;
+    let text14 = numb.toString();
+    text15 = text14.padEnd(4,"0")
+    console.log(text15)
+
+    let text = "HELLO WORLD";
+    let char = text.charAt(0);
+    console.log(char);
+
+    let text18 = "HELLO WORLD";
+    let char2 = text[3];
+    console.log(char2)
+
+
+    ///COMPARISONS
+
+    a = 5;
+    b = 4;
+
+    let result = a > b;
+    alert (a==b);
+    alert (a != b);
+    alert(result);
+
+    let c = "Glow";
+    let d = "Glee";
+    alert( "Glee" > "Glow")
+
+    let e = "2";
+    let f = 2;
+    alert(  e > f);
+    alert (e == f);
+
+  </script>
+</body>
+</html>

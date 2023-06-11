@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function whileTest1 () {
+            let i = 0;
+            while (i < 3) {
+                alert(i);
+                i++;
+            }
+        }
+        
+
+
+
+        function doWhiletest1 () {
+            let i = 0;
+            do {
+                alert(i);
+                i++;
+            } while (i < 3);
+        }
+
+        for (let i = 0; i < 3; i++) {
+            alert(i);
+        }
+
+        let sum = 0;
+        while (true) {
+            let value = +prompt("Enter a number", '');
+
+            if (!value) break;
+
+            sum += value
+        }
+
+        alert ( 'Sum: ' + sum);
+
+        function findOddNumbers() {
+            for (let i = 0; i <10; i++) {
+                if (i % 2 == 0) continue; {
+                    alert( i );
+                }
+            }
+        }
+        console.log(findOddNumbers())
+
+        function findEvenNumbers() {
+            for (let i = 0; i <= 10; i++) {
+                if (i % 2 == 0 && i != 0) 
+                alert( i ); {
+                } 
+            } 
+        }
+
+        function findEvenNumber2() {
+            for (let i = 2; i <= 10; i++){
+                if (i % 2 == 0) {
+                    alert ( i );
+                }
+            }
+        }
+
+        findEvenNumber2()
+     
+        function whileThreeNumbers() {
+            let i = 0;
+            while(i < 3) {
+                i++;
+                alert( `number ${i}!` )
+            }
+        }
+
+        whileThreeNumbers()
+
+        function numberGreaterThan100() {
+            const x = 100;
+
+            while(x > (prompt("Enter a number great than 100"))) {
+                alert("Enter a number greater than 100!")
+                continue;
+            } alert(x)
+        }
+
+        numberGreaterThan100()
+
+        function numberGreaterThan100Two() {
+            
+            y = prompt("Enter a number greater than 100")
+            while(y < 100 || y === "") {
+                alert("Enter a number greater than 100!")
+                y = prompt("Enter a number greater than 100");
+            } alert(y)
+        }
+
+        numberGreaterThan100Two()
+
+        function numGreaterThan100() {
+            let num;
+
+            do {
+                num = prompt("Enter a number greater than 100", 0);
+            } while (num <= 100 && num) {
+                alert(num)
+            }
+        }
+
+        numberGreaterThan100()
+
+        </script>
+</body>
+</html>

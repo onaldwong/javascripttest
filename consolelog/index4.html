@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+  
+    
+
+    let admin2 = "admin"
+    let password2 = "TheMaster"
+    let user2= prompt("Who's there?", '' )
+
+    if(user2 == admin2 && password2 == "TheMaster"){
+        alert("Welcome")
+    }
+    else if(user2 == admin2 && password2 != "TheMaster")
+        alert("Wrong password idiot")
+    else if(user2 == admin2 && password2 == null){
+        alert("Cancelled")
+    }
+    else if(user2 != admin2 && password2 != null){
+        alert("I don't know you, dude")
+    }
+    else if(user2 != admin2 && password2 == null){
+        alert("Cancelled")
+    }
+    
+    let UserName = prompt("Who's there?");
+    
+    if(UserName == "Admin") {
+        let PassWord = prompt("Password?");
+
+        if(PassWord == "TheMaster"){
+            alert("Welcome");
+        }
+        else if(PassWord === null || PassWord === ""){
+            alert("Cancelled"); 
+        }
+        else{
+            alert("Wrong password idiot")
+        }
+        }
+        
+    else if( UserName === null){
+        alert("Cancelled");
+    }
+    else if(UserName != "Admin"){
+        alert("I Don't know you");
+    }
+
+    let userName = prompt("Who is there");
+
+    
+    if(userName == "Admin") {
+        let passWord = prompt("Password?");
+
+        if(passWord == "TheMaster") {
+            alert("Welcome");
+        }
+        else if(PassWord === null || PassWord === ""){
+            alert("Cancelled");
+        }
+        else {
+            alert("Wrong Password");
+        }
+    }
+    
+
+
+    </script>
+
+
+    </body>
+</html>

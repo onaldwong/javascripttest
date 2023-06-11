@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"]
+        console.log(fruits.join(" . "))
+
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.pop();
+
+
+        const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        let fruit = fruits3.pop();
+        console.log(fruit)
+
+
+        // The push() method adds a new element to an array (at the end):
+        const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits4.push("Kiwi");
+        console.log(fruits4)
+
+        const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+        let length = fruits5.push("Kiwi");
+        console.log(fruits5)
+
+        // The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+        const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits6.shift();
+        console.log(fruits6)
+
+        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+        const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits7.unshift("Lemon");
+
+        const fruits8 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits8.unshift("Lemon");
+
+
+        // The length property provides an easy way to append a new element to an array:
+
+        const fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits9[fruits9.length] = "Kiwi";
+
+        // The concat() method creates a new array by merging (concatenating) existing arrays:
+
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        const myChildren = myGirls.concat(myBoys);
+        console.log(myChildren)
+
+        const arr1 = ["Cecilie", "Lone"]
+        const arr2 = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+        const myChildren2 = arr1.concat(arr2, arr3);
+        console.log(myChildren2)
+
+        // The splice() method can be used to add new items to an array:
+
+        const fruits10 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits10.splice(2, 0, "Lemon", "Kiwi");
+
+        console.log(fruits10)
+
+
+        const fruits11 = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits11)
+        fruits11.splice(2, 2, "Lemon", "Kiwi");
+        console.log(fruits11)
+
+
+        const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits12.splice(0, 1);
+
+        // With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
+        const fruits13 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits13.splice(0, 1);
+
+        
+        const fruits14 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        console.log(fruits14)
+        const citrus = fruits14.slice(1);
+        console.log(citrus)
+
+
+        
+    </script>
+</body>
+</html>

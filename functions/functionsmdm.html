@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p div class="Hi"></p>
+
+    <script>
+    //     function showMessage() {
+    //         let message = "Hello, I`m Javascript!";
+
+    //         alert(message);
+    //     }
+
+    //     showMessage();
+
+        
+
+    //     let userName = "John";
+
+    //     function showMessage2() {
+    //         let message = "Hello, " + userName;
+    //         alert(message)
+    //     }
+
+    //     showMessage2();
+
+    //     function showMessage3(text) {
+    //         text = text || 'empty';
+
+    //         alert(text);
+    //     }
+
+    
+
+    //     function checkAge(age) {
+
+    //        return( age > 18) ? true : confirm("Did Parents allow you?")
+    //        alert(confirm);
+    //     }
+
+    //     console.log(checkAge(20));
+        
+
+    //     function min(a , b) {
+    //         if (a > b) {
+    //             alert(b)
+    //         } else
+    //         alert (a);
+
+    //     }
+
+    //     min(2 ,5)
+    //     min(3, -1) 
+    //     min(1, 1) 
+
+    //     function pow(x, n) {
+    //         return x**n
+            
+    //     }
+
+    //     alert(pow(3,3))
+
+    //     let sum = (a, b) => a+b;
+
+    // alert( sum(1, 2))
+
+    // let double = n => n * 2;
+
+    // alert( double(3));
+
+
+    let age = prompt("what is your age?", 18);
+
+    let welcome = (age < 18) ?
+        () => alert("Childish") :
+        () => alert("Old and Useless!")
+
+    welcome();
+    
+    // let sum2 = (a, b) => {
+    //     let result = a + b;
+    //     return result;
+    // }
+
+    function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+    }
+
+    ask(
+        "Are you a lower life form?",
+        function() { alert("Now bow to your lord.")},
+        function() { alert("Stop lying to yourself")}
+    )
+
+
+    
+        
+
+    </script>
+    
+
+</body>
+</html>

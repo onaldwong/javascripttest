@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //    let response;
+    // let score = prompt('what score did you get? (1-100)')
+    
+    // let machineActive = true;
+  
+    // if(machineActive === true){
+    //     if(score < 0 || score > 100) {
+    //         response = "This is not possible, your score should be between 1-100.";
+    //     }
+    //     else if(score <= 19) {
+    //         response = "That was a terrible score — total fail!"
+    //     }
+    //     else if(score >= 20 && score <= 39) {
+    //         response = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+    //     }
+    //     else if(score >= 40 && score <= 69) {
+    //         response = "You did a passable job, not bad!";
+    //     }
+    //     else if(score >= 70 && score <=89) {
+    //         response = "That\'s a great score, you really know your stuff.";
+    //     }
+    //     else if(score >= 90 && score <= 100) {
+    //         response = "What an amazing score! Did you cheat? Are you for real?";    
+    //     }
+    //     else {
+    //         response = "This is not possible, your score should be between 1-100.";
+    //         let score = prompt('Score should be between 1-100. insert again')
+    //     }
+    // }
+    // else{
+    //     response = 'Machine is not turned on, switch on the machine'
+    //     score = ""
+    // }
+    // // Don't edit the code below here!
+
+    // const section = document.querySelector('section');
+
+    // let para1 = document.createElement('p');
+    // let para2 = document.createElement('p');
+
+    // para1.textContent = `Your score is ${ score }`;
+    // para2.textContent = response;
+
+    // section.appendChild(para1);
+    // section.appendChild(para2);
+
+    let response;
+    // let score = prompt('what score did you get? (1-100)')
+    const score = 15;
+    
+    let machineActive = true;
+  
+    if(machineActive === true) {
+	// Add your code here
+    switch (score) {
+        case (score < 0 || score > 100):
+        response = "This is not possible, your score should be between 1-100.";
+        break
+        case "score <= 19":
+        response = "That was a terrible score — total fail!"
+        break
+        case (score >= 20 && score <= 39):
+        response = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+        break
+        case (score >= 40 && score <= 69):
+        response = "You did a passable job, not bad!";
+        break
+        case (score >= 70 && score <=89):
+        response = "That\'s a great score, you really know your stuff.";
+        break
+        case (score >= 90 && score <= 100):
+            response = "What an amazing score! Did you cheat? Are you for real?"; 
+        break
+        default:
+        response = "This is not possible, your score should be between 1-100.";       
+    }
+
+} else {
+  response = 'The machine is turned off. Turn it on to process your score.';
+}
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = `Your score is ${ score }`;
+    para2.textContent = response;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+
+    let response2;
+    let score2 = 18;
+
+    switch (score2) {
+        case score2 < 0 || score2 > 100:
+        response2 = "This is not possible, your score should be between 1-100.";
+        break;
+        case score2 <= 19:
+        console.log("That was a terrible score — total fail!")
+        break;
+        case (score2 >= 20 && score2 <= 39):
+        response2 = "You know some things, but it\'s a pretty bad score. Needs improvement.";
+        break;
+        case (score2 >= 40 && score2<= 69):
+        response2 = "You did a passable job, not bad!";
+        break;
+        case (score >= 70 && score <=89):
+        response2 = "That\'s a great score, you really know your stuff.";
+        break;
+        case (score >= 90 && score <= 100):
+            response2 = "What an amazing score! Did you cheat? Are you for real?"; 
+        break;
+        default:
+        response2 = "This is not possible, your score should be between 1-100.";       
+    }
+
+</script>
+</html>

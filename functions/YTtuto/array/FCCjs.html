@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+     let ourArray = [50, 60, 70];
+    let ourData = ourArray[0];
+    console.log(ourArray[1])
+
+    ourArray[1] = 75;
+    console.log(ourArray[1])
+
+    ourArray.push(80, 90)
+    console.log(ourArray)
+
+    console.log("next")
+    newArray = ourArray.pop()
+    console.log(ourArray)
+    console.log(newArray)
+
+    let shiftedArray = ourArray.shift()
+    console.log(ourArray)
+    console.log(shiftedArray)
+
+    ourArray.unshift(shiftedArray)
+    
+    console.log(ourArray)
+
+    
+</script>
+   
+</body>
+</html>

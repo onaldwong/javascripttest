@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cats = ["Pete", "Biggles", "Jasmine"];
+
+        let myFavoriteCats = "My cats are called ";
+        
+        for (let i = 0; i < cats.length; i++) {
+        if (i === cats.length -1) {
+            myFavoriteCats += `and ${cats[i]}.`;
+        } else {
+            myFavoriteCats += `${cats[i]}, `;
+        }
+    }
+
+    console.log(myFavoriteCats)
+
+
+    const family = ["Yin Kwan", "Wendy", "Onald", "Tony"]
+
+    let myFamilyMembers = "My family members are ";
+
+    for (let i = 0; i < family.length; i++) {
+        if(i === family.length -1) {
+            myFamilyMembers += `and ${family[i]}.`
+        } else if(i === family.length -2) {
+            myFamilyMembers += `${family[i]} `
+        } else {
+            myFamilyMembers += `${family[i]}, `
+        }
+    }
+
+    console.log(myFamilyMembers)
+
+    </script>
+</body>
+</html>
